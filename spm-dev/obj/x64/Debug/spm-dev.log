@@ -1,3 +1,57 @@
 ﻿  Validating sources
+  Copying sources remotely to '192.168.0.178'
   Build command not configured, skipping.
-  Remote build command not configured, skipping.
+  Invoking 'make clean && make', working directory: '/root/projects/spm-dev/'
+  rm main.o
+  g++ -c -o main.o main.cpp -lstdc++
+  
+  In file included from main.cpp:2:
+  spm-dev.h: In function ‘int repositoryAddAutoControlPakagePakage(char*, char*, char*)’:
+  spm-dev.h:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+     13 | }
+        | ^
+  spm-dev.h: In function ‘int repositoryAddPakage(char*, char*)’:
+  spm-dev.h:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+     16 | }
+        | ^
+  spm-dev.h: In function ‘int webServerInit()’:
+  spm-dev.h:19:1: warning: no return statement in function returning non-void [-Wreturn-type]
+     19 | }
+        | ^
+  main.cpp: In function ‘int main(int, char**)’:
+  main.cpp:5:46: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      5 |         repositoryAddAutoControlPakagePakage("sdd", "sdd", "sdd");
+        |                                              ^~~~~
+  main.cpp:5:53: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      5 |         repositoryAddAutoControlPakagePakage("sdd", "sdd", "sdd");
+        |                                                     ^~~~~
+  main.cpp:5:60: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      5 |         repositoryAddAutoControlPakagePakage("sdd", "sdd", "sdd");
+        |                                                            ^~~~~
+  
+  gcc -o spm-dev main.cpp -lstdc++
+  
+  In file included from main.cpp:2:
+  spm-dev.h: In function ‘int repositoryAddAutoControlPakagePakage(char*, char*, char*)’:
+  spm-dev.h:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+     13 | }
+        | ^
+  spm-dev.h: In function ‘int repositoryAddPakage(char*, char*)’:
+  spm-dev.h:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+     16 | }
+        | ^
+  spm-dev.h: In function ‘int webServerInit()’:
+  spm-dev.h:19:1: warning: no return statement in function returning non-void [-Wreturn-type]
+     19 | }
+        | ^
+  main.cpp: In function ‘int main(int, char**)’:
+  main.cpp:5:46: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      5 |         repositoryAddAutoControlPakagePakage("sdd", "sdd", "sdd");
+        |                                              ^~~~~
+  main.cpp:5:53: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      5 |         repositoryAddAutoControlPakagePakage("sdd", "sdd", "sdd");
+        |                                                     ^~~~~
+  main.cpp:5:60: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      5 |         repositoryAddAutoControlPakagePakage("sdd", "sdd", "sdd");
+        |                                                            ^~~~~
+  
